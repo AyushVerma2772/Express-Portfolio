@@ -1,0 +1,85 @@
+@media only screen and (max-width: 620px) {
+    .main-container {
+        position: relative;
+    }
+
+    .heading-1 {
+        text-align: center !important;
+    }
+
+    /** ========= Right Content ========= */
+    .right-content {
+        width: 100%;
+        position: relative;
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        left: 4rem;
+        top: 2rem;
+        z-index: 99;
+    }
+
+    /** ========= Sidebar ========= */
+    .sidebar {
+        position: absolute;
+        width: 100%;
+        z-index: 9;
+        left: -100%;
+        top: 0;
+        transition: all 0.4s ease-in-out;
+        border: 0;
+        background-color: var(--black);
+        justify-content: center;
+    }
+
+    .open {
+        left: 0;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .my-navbar {
+        margin: 7rem 0 !important;
+    }
+
+    /** ========= Skill Page =========  */
+    .skill-container {
+        width: 93%;
+        grid-template-columns: 1fr !important;
+        row-gap: 2.3rem;
+    }
+
+    /** ========= Services Page =========  */
+    .services-container {
+        grid-template-columns: 0.3fr 0.3fr !important;
+    }
+
+
+
+    /** ========= Contact Page =========  */
+    .contact-container {
+        height: 75rem;
+        flex-direction: column;
+    }
+
+    .contact-info {
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+        height: auto;
+    }
+    
+    .contact-card .para {
+        margin: 1.5rem 0 !important;
+    }
+
+    .contact-form {
+        width: 85%;
+    }
+
+    .contact-page .social-media {
+        display: none !important;
+    }
+
+}
